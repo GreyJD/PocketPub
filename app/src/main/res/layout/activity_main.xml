@@ -16,8 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="134dp"
+        android:layout_below="@id/toolbar"
         android:text="@string/base_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,23 +26,21 @@
         android:id="@+id/ingredients_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="221dp"
+        android:layout_below="@id/base_button"
         android:text="Ingredients" />
 
     <Button
         android:id="@+id/food_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/ingredients_button"
         android:text="Food Pairings" />
 
     <Button
         android:id="@+id/occasion_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:layout_below="@id/food_button"
         android:text="Occasions" />
 
 </RelativeLayout>
