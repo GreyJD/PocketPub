@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         occButton = findViewById(R.id.occasion_button);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Welcome to PocketPub!");
         baseButton.setOnClickListener(new View.OnClickListener() {
                                           @Override
                                           public void onClick(View view) {
