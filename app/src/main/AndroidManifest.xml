@@ -9,14 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FoodPairings"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Occasions"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Ingredients"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".BaseMenu"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".RecipeList"></activity>
+        <activity
+            android:name=".FoodPairings"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Occasions"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Ingredients"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BaseMenu"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".OtherActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
