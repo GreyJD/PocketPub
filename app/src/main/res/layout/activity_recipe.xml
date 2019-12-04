@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recipe">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/drink_image"
+        android:layout_width="209dp"
+        android:layout_height="224dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="80dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="Drink clipart"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/preview16" />
+
+    <TextView
+        android:id="@+id/strength"
+        android:layout_width="151dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="9dp"
+        android:text="Strength: Yes"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ingredients"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/drink_image"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.47000003" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="177dp"
+        android:layout_height="29dp"
+        android:layout_below="@id/strength"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="Ingredients: Vodka"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/equipment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/drink_image"
+        app:layout_constraintTop_toBottomOf="@+id/strength" />
+
+    <TextView
+        android:id="@+id/equipment"
+        android:layout_width="177dp"
+        android:layout_height="29dp"
+        android:layout_below="@id/ingredients"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="115dp"
+        android:text="Equipment: N/A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/recipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/drink_image"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients" />
+
+    <TextView
+        android:id="@+id/recipe"
+        android:layout_width="340dp"
+        android:layout_height="190dp"
+        android:layout_below="@id/strength"
+        android:text="Step 1: Get a bottle of vodka and drink the whole thing before noon.\n\nStep 2: There is no step 2."
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
